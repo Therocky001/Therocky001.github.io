@@ -501,8 +501,8 @@ const App = () => {
             >
               <img 
                 src="https://ujjvalrajauriya.me/me.jpg"
-onError={(e) => { e.currentTarget.src = ${import.meta.env.BASE_URL}me.jpg }}
-alt="Professional" 
+                onError={(e) => { e.currentTarget.src = `${import.meta.env.BASE_URL}me.jpg` }}
+                alt="Professional" 
                 className="w-auto h-auto max-w-full max-h-96 object-contain rounded-3xl shadow-2xl border-4 border-purple-500/30 hover:border-purple-500/50 transition-all duration-300 hover:scale-105"
               />
             </motion.div>
@@ -725,8 +725,9 @@ alt="Professional"
                 {[
                   { skill: 'HTML/CSS/JavaScript', level: 95 },
                   { skill: 'React.js', level: 90 },
-                  { skill: 'Node.js', level: 85 },
-                  { skill: 'MongoDB', level: 80 },
+                  { skill: 'Prompting', level: 85 },
+                  { skill: 'Machine Learning', level: 80 },
+                  { skill: 'NLP', level: 82 },
                   { skill: 'UI/UX Design', level: 88 },
                   { skill: 'Photoshop', level: 85 }
                 ].map((item, index) => (
