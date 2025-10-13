@@ -500,8 +500,9 @@ const App = () => {
               className="relative flex justify-center"
             >
               <img 
-                src="https://therocky001.github.io/me.jpg" 
-                alt="Professional" 
+                src="https://ujjvalrajauriya.me/me.jpg"
+onError={(e) => { e.currentTarget.src = ${import.meta.env.BASE_URL}me.jpg }}
+alt="Professional" 
                 className="w-auto h-auto max-w-full max-h-96 object-contain rounded-3xl shadow-2xl border-4 border-purple-500/30 hover:border-purple-500/50 transition-all duration-300 hover:scale-105"
               />
             </motion.div>
