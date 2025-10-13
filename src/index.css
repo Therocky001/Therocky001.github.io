@@ -1,0 +1,8 @@
+/* Using Tailwind via CDN (linked in index.html). Add any global/custom styles here. */
+html, body, #root {
+	height: 100%;
+}
+
+/* Minimal resets to complement Tailwind CDN */
+* { box-sizing: border-box; }
+
