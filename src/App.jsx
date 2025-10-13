@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import meImage from './me.jpg';
 import { 
   ArrowDown, 
   Instagram, 
@@ -501,7 +500,7 @@ const App = () => {
               className="relative flex justify-center"
             >
               <img 
-                src={meImage}
+                src="/me.jpg" 
                 alt="Professional" 
                 className="w-auto h-auto max-w-full max-h-96 object-contain rounded-3xl shadow-2xl border-4 border-purple-500/30 hover:border-purple-500/50 transition-all duration-300 hover:scale-105"
               />
