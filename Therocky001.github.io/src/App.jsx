@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import mePhoto from './me.jpg';
 import { motion, AnimatePresence } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { 
@@ -499,12 +500,21 @@ const App = () => {
               viewport={{ once: true }}
               className="relative flex justify-center"
             >
-              <img 
-                src="https://ujjvalrajauriya.me/me.jpg"
-onError={(e) => { e.currentTarget.src = ${import.meta.env.BASE_URL}me.jpg }}
-alt="Professional" 
-                className="w-auto h-auto max-w-full max-h-96 object-contain rounded-3xl shadow-2xl border-4 border-purple-500/30 hover:border-purple-500/50 transition-all duration-300 hover:scale-105"
-              />
+              {(() => {
+                const cdnPhoto = 'https://ujjvalrajauriya.me/me.jpg';
+                return (
+                  <img
+                    src={cdnPhoto}
+                    onError={(e) => {
+                      // Prevent infinite loop and fall back to bundled asset
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = mePhoto;
+                    }}
+                    alt="Professional"
+                    className="w-auto h-auto max-w-full max-h-96 object-contain rounded-3xl shadow-2xl border-4 border-purple-500/30 hover:border-purple-500/50 transition-all duration-300 hover:scale-105"
+                  />
+                );
+              })()}
             </motion.div>
           </div>
         </div>
