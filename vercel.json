@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "installCommand": "cd Therocky001.github.io && npm ci",
+  "buildCommand": "cd Therocky001.github.io && npm run build",
+  "outputDirectory": "Therocky001.github.io/dist",
+  "framework": "vite",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
