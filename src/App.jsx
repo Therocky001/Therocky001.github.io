@@ -725,10 +725,11 @@ alt="Professional"
                 {[
                   { skill: 'HTML/CSS/JavaScript', level: 95 },
                   { skill: 'React.js', level: 90 },
-                  { skill: 'Node.js', level: 85 },
-                  { skill: 'MongoDB', level: 80 },
+                  { skill: 'NLP', level: 85 },
+                  { skill: 'Machine Learning ', level: 80 },
                   { skill: 'UI/UX Design', level: 88 },
-                  { skill: 'Photoshop', level: 85 }
+                  { skill: 'Photoshop', level: 85 },
+                  { skill: 'Prompt Engineer', level: 85 }
                 ].map((item, index) => (
                   <div key={index}>
                     <div className="flex justify-between mb-2">
